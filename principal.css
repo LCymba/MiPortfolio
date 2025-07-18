@@ -180,4 +180,19 @@ body {
 
 .home-sci a:hover::before {
     width: 100%;
- }
+}
+
+
+.contenido-derecho {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding: 40px;
+}
+
+.foto-principal {
+    max-width: 100%;
+    height: auto;
+
+}
