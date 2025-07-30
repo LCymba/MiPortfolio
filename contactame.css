@@ -49,7 +49,7 @@ body {
 body {
     margin: 0;
     padding: 0;
-    color: white;
+    color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -88,7 +88,7 @@ body {
 .input-group-2 textarea {
     width: 100%;
     padding: 15px;
-    border: 2px solid #9100d4;
+    border: 2px solid #472847;
     border-radius: 5px;
     background-color: transparent;
     color: #1a0000;
@@ -129,7 +129,7 @@ textarea {
     font-size: 18px;
     color: #ffffff;
     background-color: transparent;
-    border: 2px solid #9100d4;
+    border: 2px solid #472847;
     cursor: pointer;
     overflow: hidden;
     z-index: 1;
@@ -186,9 +186,48 @@ textarea {
     font-size: 1.7em;
 }
 
-.redes-cont {
+/* .footer .redes-cont {
+    position: absolute;
+    bottom: 40px;
+    width: 170px; 
     display: flex;
-    justify-content: space-evenly;
-    width: 300px;
-    margin-top: 1em;
+    justify-content: space-between;
+} */
+
+.redes-cont a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px; 
+    background: transparent;
+    border: 2px solid #472847;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #472847;
+    text-decoration: none; 
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.redes-cont a:hover{
+    color: rgb(210, 185, 228);
+}
+
+.redes-cont a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #472847; 
+    z-index: -1;
+    transition: .5s;
+}
+
+.redes-conti a:hover::before {
+    width: 100%;
 }
