@@ -6,22 +6,29 @@
 }
 
 body {
-    background: #946394;
+    background: #6c496a;
     color: whitesmoke;
 }
 
 .header {
+
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     padding: 13px 10%;
-    background: transparent;
+    background: rgba(108, 73, 106, 0.4);
+    backdrop-filter: blur(4px);
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    transition: transform 0.3s ease, background 0.3s ease;
+
 }
+
+
+
 
 .logo {
     font-size: 25px;
@@ -39,9 +46,9 @@ body {
     transition: .3s;
 }
 
-.navbar a:hover, 
+.navbar a:hover,
 .navbar a.active {
-    color:#340558;
+    color: #340558;
 }
 
 .home {
@@ -54,7 +61,7 @@ body {
 body {
     margin: 0;
     padding: 0;
-    color: rgb(255, 255, 255);
+    color: white(128, 6, 6);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -68,12 +75,12 @@ body {
 
 .titulo-content h1 {
     font-size: 2.5rem;
-    color: white;
+    color: #b38cb0;
 }
 
 /* NOS PONEMOS EN CONTACTO*/
 .titulo-content h3 {
-    color: #ccc;
+    color: white;
     font-weight: normal;
     margin-top: 10px;
 }
@@ -93,7 +100,7 @@ body {
 .input-group-2 textarea {
     width: 100%;
     padding: 15px;
-    border: 2px solid #472847;
+    border: 2px solid #b38cb0;
     border-radius: 5px;
     background-color: transparent;
     color: #1a0000;
@@ -134,7 +141,7 @@ textarea {
     font-size: 18px;
     color: #ffffff;
     background-color: transparent;
-    border: 2px solid #472847;
+    border: 2px solid #b38cb0;
     cursor: pointer;
     overflow: hidden;
     z-index: 1;
@@ -150,7 +157,7 @@ textarea {
     left: 0;
     width: 0%;
     height: 100%;
-    background-color: #472847;
+    background-color: #b38cb0;
     z-index: -1;
     transition: width 0.5s ease;
 }
@@ -160,7 +167,7 @@ textarea {
 }
 
 .btn-enviar:hover {
-    color: white;
+    color: #6c496a;
 }
 
 .input-group3 {
@@ -180,7 +187,7 @@ textarea {
     align-items: center;
     width: 100vw;
     height: 200px;
-    background-color: rgb(167, 167, 111);
+    background-color: #7E5A7C;
 }
 
 .footer-contenido h2 .redes-cont i {
@@ -205,20 +212,20 @@ textarea {
     justify-content: center;
     align-items: center;
     width: 40px;
-    height: 40px; 
+    height: 40px;
     background: transparent;
-    border: 2px solid #472847;
+    border: 2px solid #b38cb0;
     border-radius: 50%;
     font-size: 20px;
-    color: #472847;
-    text-decoration: none; 
+    color: #906B8D;
+    text-decoration: none;
     z-index: 1;
     overflow: hidden;
     transition: .5s;
 }
 
-.redes-cont a:hover{
-    color: rgb(210, 185, 228);
+.redes-cont a:hover {
+    color: #b38cb0;
 }
 
 .redes-cont a::before {
@@ -228,7 +235,7 @@ textarea {
     left: 0;
     width: 0;
     height: 100%;
-    background: #472847; 
+    background: #6c496a;
     z-index: -1;
     transition: .5s;
 }
